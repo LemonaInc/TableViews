@@ -127,58 +127,24 @@ class WestViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     /// UIAlertView ////////////////////////////////////////////////////////////
 
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section != 1 {
-            if indexPath.row < 0 {
-                
-                UserDefaults.standard.synchronize()
-                dismiss(animated: true, completion: nil)
-            } else {
-                
-                
-                // This will show the UIAlert View when the user clicks on the cell
-                let alertController = UIAlertController(title: "\(States)", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-                
-                let action = UIAlertAction(title: "You selected a State", style: UIAlertActionStyle.default, handler: { action in
-                    
-                })
-                
-                alertController.addAction(action)
-                show(alertController, sender: nil)
-            }
-            
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let alertController = UIAlertController(title:  objectsArray [indexPath.section].sectionData [indexPath.row], message: "You Selected \( objectsArray [indexPath.section].sectionData [indexPath.row])", preferredStyle: .alert)
+        
+        let AlertView = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("OKAY")
         }
         
         
-        /// UIAlertView ////////////////////////////////////////////////////////////
+        alertController.addAction(AlertView)
         
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            if indexPath.section != 1 {
-                if indexPath.row < 1 {
-                    
-                    UserDefaults.standard.synchronize()
-                    dismiss(animated: true, completion: nil)
-                } else {
-                    
-                    
-                    // This will show the UIAlert View when the user clicks on the cell
-                    let alertController = UIAlertController(title: "\(Cities)", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-                    
-                    let action = UIAlertAction(title: "You selected a American City", style: UIAlertActionStyle.default, handler: { action in
-                        
-                    })
-                    
-                    alertController.addAction(action)
-                    show(alertController, sender: nil)
-                }
-                
-            }
-
-            /// UIAlertView ////////////////////////////////////////////////////////////
-
+        // Present the controller
+        self.present(alertController, animated: true, completion: nil)
         
-            }
-            
-        }
-
+    }
+    
 }
+
+
+

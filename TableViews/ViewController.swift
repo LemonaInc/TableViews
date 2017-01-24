@@ -80,16 +80,14 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alertController = UIAlertController(title: "Hello There", message: "You Selected a cell", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Alert", message: "You Selected \( objectsArray [indexPath.section].sectionData [indexPath.row])", preferredStyle: .alert)
         
-        
-        // Create the actions
         let AlertView = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
             NSLog("OKAY")
         }
       
-        // Add the actions
+
         alertController.addAction(AlertView)
         
         // Present the controller
