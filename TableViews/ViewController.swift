@@ -79,29 +79,23 @@ class TableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section != 1 {
-            if indexPath.row < 0 {
-                
-                UserDefaults.standard.synchronize()
-                dismiss(animated: true, completion: nil)
-            } else {
-                
-                
-                // This will show the UIAlert View when the user clicks on the cell
-                let alertController = UIAlertController(title: "\(cell)", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-                
-                let action = UIAlertAction(title: "You selected a American City", style: UIAlertActionStyle.default, handler: { action in
-                    
-                })
-                
-                alertController.addAction(action)
-                show(alertController, sender: nil)
+        
+        let alertController = UIAlertController(title: "Hello There", message: "You Selected a cell", preferredStyle: .alert)
+        
+        
+        // Create the actions
+        let AlertView = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("OKAY")
+        }
+      
+        // Add the actions
+        alertController.addAction(AlertView)
+        
+        // Present the controller
+        self.present(alertController, animated: true, completion: nil)
+        
             }
             
         }
-}
 
-
-
-
-}
