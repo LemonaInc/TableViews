@@ -2,8 +2,8 @@
 //  SoundHelper.swift
 //  Seedlings
 //
-//  Created by Jonathan Ortheden on 29/08/15.
-//  Copyright (c) 2015 Seedlings. All rights reserved.
+//  Jaxon Stevens on 1/17/17.
+//   Copyright © 2017 Jaxon Stevens. All rights reserved.
 //
 
 import UIKit
