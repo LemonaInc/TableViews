@@ -287,7 +287,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7j-vR-eCc">
-                                                            <rect key="frame" x="290" y="28" width="100" height="50"/>
+                                                            <rect key="frame" x="320" y="28" width="100" height="50"/>
                                                             <color key="backgroundColor" red="0.1215686275" green="0.83529411760000005" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="7dM-xU-h0D"/>
@@ -315,7 +315,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="6ym-ie-krD" secondAttribute="bottom" constant="15" id="WGw-3Q-quf"/>
                                                         <constraint firstItem="6ym-ie-krD" firstAttribute="leading" secondItem="BgH-Eg-LgW" secondAttribute="leading" constant="15" id="nE2-3h-wMk"/>
                                                         <constraint firstItem="q7j-vR-eCc" firstAttribute="centerY" secondItem="BgH-Eg-LgW" secondAttribute="centerY" id="oEY-3N-iJm"/>
-                                                        <constraint firstItem="q7j-vR-eCc" firstAttribute="centerX" secondItem="BgH-Eg-LgW" secondAttribute="centerX" constant="50" id="ztR-ib-PT1"/>
+                                                        <constraint firstItem="q7j-vR-eCc" firstAttribute="centerX" secondItem="BgH-Eg-LgW" secondAttribute="centerX" constant="80" id="ztR-ib-PT1"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
