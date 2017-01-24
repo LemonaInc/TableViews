@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// This is the Model class but named population 
+// There is nothing in this swift file at the moment.
 
 class Population: UIViewController {
     
