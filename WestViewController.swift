@@ -10,11 +10,11 @@
 import UIKit
 import AVFoundation
 
-protocol AnimalsViewControllerDelegate {
+protocol WestViewControllerDelegate {
     func didSelectanimal(_ animal: String)
 }
 
-class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WestViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     // Add index titles
@@ -84,11 +84,11 @@ class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewD
     let States = "States"
 
     
-    var delegate: AnimalsViewControllerDelegate? = nil
+    var delegate: WestViewControllerDelegate? = nil
     
 // Lets create a tableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! AnimalCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! WestCell
         
         
         // This assigns the data from the array and sections to the CellLabel

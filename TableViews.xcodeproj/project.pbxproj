@@ -18,8 +18,8 @@
 		EA8058EA1E3749E4002ED00E /* Inspiration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA8058E91E3749E4002ED00E /* Inspiration.mp3 */; };
 		EA8058EF1E374C7B002ED00E /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8058EE1E374C7B002ED00E /* Population.swift */; };
 		EA8058F11E374FE6002ED00E /* SoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8058F01E374FE6002ED00E /* SoundHelper.swift */; };
-		EAA307F91E2F4930007DB464 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA307F81E2F4930007DB464 /* AnimalsViewController.swift */; };
-		EAA307FB1E2F495B007DB464 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA307FA1E2F495B007DB464 /* AnimalCell.swift */; };
+		EAA307F91E2F4930007DB464 /* WestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA307F81E2F4930007DB464 /* WestViewController.swift */; };
+		EAA307FB1E2F495B007DB464 /* WestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA307FA1E2F495B007DB464 /* WestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		EA8058E91E3749E4002ED00E /* Inspiration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Inspiration.mp3; sourceTree = "<group>"; };
 		EA8058EE1E374C7B002ED00E /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 		EA8058F01E374FE6002ED00E /* SoundHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundHelper.swift; sourceTree = "<group>"; };
-		EAA307F81E2F4930007DB464 /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimalsViewController.swift; path = ../AnimalsViewController.swift; sourceTree = "<group>"; };
-		EAA307FA1E2F495B007DB464 /* AnimalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		EAA307F81E2F4930007DB464 /* WestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WestViewController.swift; path = ../WestViewController.swift; sourceTree = "<group>"; };
+		EAA307FA1E2F495B007DB464 /* WestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				EA5A908B1E2ECEC100BF69DA /* AppDelegate.swift */,
-				EAA307F81E2F4930007DB464 /* AnimalsViewController.swift */,
-				EAA307FA1E2F495B007DB464 /* AnimalCell.swift */,
+				EAA307F81E2F4930007DB464 /* WestViewController.swift */,
+				EAA307FA1E2F495B007DB464 /* WestCell.swift */,
 				EA8058F01E374FE6002ED00E /* SoundHelper.swift */,
 				EA8058EE1E374C7B002ED00E /* Population.swift */,
 				EA4426A11E36E35E00E282A4 /* ViewController.swift */,
@@ -292,8 +292,8 @@
 			files = (
 				EA4426A21E36E35E00E282A4 /* ViewController.swift in Sources */,
 				EA8058F11E374FE6002ED00E /* SoundHelper.swift in Sources */,
-				EAA307FB1E2F495B007DB464 /* AnimalCell.swift in Sources */,
-				EAA307F91E2F4930007DB464 /* AnimalsViewController.swift in Sources */,
+				EAA307FB1E2F495B007DB464 /* WestCell.swift in Sources */,
+				EAA307F91E2F4930007DB464 /* WestViewController.swift in Sources */,
 				EA5A908C1E2ECEC100BF69DA /* AppDelegate.swift in Sources */,
 				EA8058EF1E374C7B002ED00E /* Population.swift in Sources */,
 			);

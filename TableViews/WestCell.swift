@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnimalCell: UITableViewCell {
+class WestCell: UITableViewCell {
     
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var cellLabel: UILabel!

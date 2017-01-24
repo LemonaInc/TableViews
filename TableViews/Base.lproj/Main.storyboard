@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animals View Controller-->
+        <!--West View Controller-->
         <scene sceneID="3yy-9Z-hh1">
             <objects>
-                <viewController id="SOG-PW-Hdo" customClass="AnimalsViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SOG-PW-Hdo" customClass="WestViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Yp-5f-l2Z"/>
                         <viewControllerLayoutGuide type="bottom" id="CPx-3N-B08"/>
@@ -154,7 +154,6 @@
         <!--Regular Table View-->
         <scene sceneID="Dxw-Ek-hZf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="81v-fH-wwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="143-7y-ysL" customClass="TableViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iD7-Y1-kET">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -186,16 +185,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Regular Table View" id="9N6-iH-bTG"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="FYe-ah-RXb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81v-fH-wwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-452" y="1020"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o6a-UW-hAc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C95-8Q-I1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="BSM-wp-7TL" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Opy-qD-hPQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -205,13 +205,14 @@
                         <segue destination="143-7y-ysL" kind="relationship" relationship="rootViewController" id="m72-65-hfa"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C95-8Q-I1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1231" y="991.00000000000011"/>
         </scene>
-        <!--Animals View Controller-->
+        <!--West View Controller-->
         <scene sceneID="Heo-9h-nXh">
             <objects>
-                <viewController storyboardIdentifier="phraseController" id="35y-lP-ezX" customClass="AnimalsViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="phraseController" id="35y-lP-ezX" customClass="WestViewController" customModule="TableViews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gv9-f4-TP9"/>
                         <viewControllerLayoutGuide type="bottom" id="S7x-y4-sg1"/>
@@ -270,11 +271,11 @@
                                 <rect key="frame" x="0.0" y="181" width="600" height="419"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="yVi-hl-I9o" customClass="AnimalCell" customModule="TableViews" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="yVi-hl-I9o" customClass="WestCell" customModule="TableViews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yVi-hl-I9o" id="3Y0-zk-pJb">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="125.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgH-Eg-LgW">

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-extension AnimalsViewController {
+extension WestViewController {
         
     func setupAudio() {
         let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Inspiration", ofType: "mp3")!)

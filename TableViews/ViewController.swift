@@ -21,6 +21,9 @@ class TableViewController: UITableViewController {
         
     }
     
+    
+    let cell = "Cell"
+    
     var objectsArray = [Objects] ()
     
     override func viewDidLoad() {
@@ -36,15 +39,13 @@ class TableViewController: UITableViewController {
         
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:indexPath)
-        
+      
         cell.textLabel?.text = objectsArray [indexPath.section].sectionData [indexPath.row]
-        
         return cell
 
-    
 
     }
 
@@ -65,6 +66,7 @@ class TableViewController: UITableViewController {
    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return self.westIndexTitles
     }
+    
 
     
     
@@ -73,9 +75,33 @@ class TableViewController: UITableViewController {
         return objectsArray[section].sectionName
         
     }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section != 1 {
+            if indexPath.row < 0 {
+                
+                UserDefaults.standard.synchronize()
+                dismiss(animated: true, completion: nil)
+            } else {
+                
+                
+                // This will show the UIAlert View when the user clicks on the cell
+                let alertController = UIAlertController(title: "\(cell)", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+                
+                let action = UIAlertAction(title: "You selected a American City", style: UIAlertActionStyle.default, handler: { action in
+                    
+                })
+                
+                alertController.addAction(action)
+                show(alertController, sender: nil)
+            }
+            
+        }
 }
 
 
 
 
-
+}
